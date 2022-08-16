@@ -1,3 +1,14 @@
+.review{
+  margin-bottom: 136px;
+}
+
 .review__title{
   margin-bottom: 112px;
+}
+
+.splide__item{
+  background-color: #CBDFC3;
+  border-radius: 20px;
+  min-height: 500px;
+  padding: 141px 103px 22px 122px;
 }
