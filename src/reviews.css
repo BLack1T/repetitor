@@ -1,14 +1,36 @@
-.review{
+.review {
   margin-bottom: 136px;
 }
 
-.review__title{
+.review__title {
   margin-bottom: 112px;
 }
 
-.splide__item{
-  background-color: #CBDFC3;
+.splide__item {
+  background-color: #cbdfc3;
   border-radius: 20px;
   min-height: 500px;
   padding: 141px 103px 22px 122px;
+  width: 790px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.splide__item-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 77px;
+}
+
+.splide__item-title{
+  text-align: right;
+}
+
+.splide__item-foto {
+  position: absolute;
+  top: -87px;
+  left: -87px;
 }
