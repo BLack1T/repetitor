@@ -10,8 +10,8 @@ import './src/footer.css'
 
 
 
+import '@splidejs/splide/css/core';
 import Splide from '@splidejs/splide';
-
 new Splide( '.splide' ).mount();
 
 

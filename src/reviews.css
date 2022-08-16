@@ -29,8 +29,48 @@
   text-align: right;
 }
 
+
+
 .splide__item-foto {
   position: absolute;
   top: -87px;
   left: -87px;
+}
+
+.splide{
+  position: relative;
+}
+
+.splide__track{
+  padding-top: 88px;
+  position: relative;
+}
+
+.splide__arrows{
+  display: flex;
+  position: absolute;
+  top: 302px;
+  z-index: 10;
+}
+
+.splide__arrow{
+  height: 72px;
+  width: 72px;
+  background-color: #d14582;
+  border-radius: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.splide__arrow--prev{
+  background-image: url('assets/arrowleft.svg');
+  margin-right: 1056px;
+}
+
+.splide__arrow--next{
+  background-image: url('assets/arrowright.svg');
+}
+
+.splide__pagination{
+  
 }
