@@ -82,3 +82,9 @@
   left: -350px;
   z-index: -1;
 }
+.info-img{
+  display: none;
+}
+.info__experience-img {
+  display: none;
+}

@@ -2,11 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>Vite App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/assets/tutor-icon.png" />
+    <title>РепЕтитор Дарья Кононова</title>
   </head>
   <body>
     <div id="app">
+
+      <section class="menu">
+        <div class="menu-slider">
+          123
+        </div>
+      </section>
+
       <div class="header conteiner">
         <div class="header__nav">
           <ul class="header__menu">
@@ -23,6 +32,13 @@
               <a class="menu__item-link" href="#">Отзывы</a>
             </li>
           </ul>
+          <div class="header__menu-tablet">
+            <a href="tel:79508337291" class="header__menu-number">
+              <img src="/assets/whatsapp-header.svg" alt="whatsapp" class="header__menu-phonelogo">
+              <h3 class="header__menu-phonenum">+7 (950) 833-72-91</h3>
+            </a>
+            <img src="/assets/menu.svg" alt="menu" class="header__menu-btn">
+          </div>
         </div>
 
         <div class="header__main">
@@ -39,21 +55,24 @@
             <button class="header__info-btn">Записаться</button>
           </div>
 
-          <img class="header-photo" src="assets/header-photo.png" alt="Photo" />
+          <img class="header-photo" src="/assets/header-photo.png" alt="Photo" />
         </div>
       </div>
 
       <section class="info conteiner">
         <h2 class="info__title">Обо мне</h2>
         <div class="info__main">
-          <p class="info__main-text">
-            Высшее образование - прикладная<br />
-            математика, дополнительное - педагог.
-          </p>
-          <p class="info__main-text">
-            Первая категория, постоянное повышение <br />кваллификации.
-          </p>
-          <p class="info__main-text">Действующий педагог лицея.</p>
+          <img src="/assets/woman.svg" alt="woman" class="info-img">
+          <div class="main_tetx">
+            <p class="info__main-text">
+              Высшее образование - прикладная<br />
+              математика, дополнительное - педагог.
+            </p>
+            <p class="info__main-text">
+              Первая категория, постоянное повышение <br />кваллификации.
+            </p>
+            <p class="info__main-text">Действующий педагог лицея.</p>
+          </div>
         </div>
         <div class="info__experience">
           <div class="info__experience-item">
@@ -78,7 +97,8 @@
             </p>
           </div>
         </div>
-        <img class="info-bg" src="assets/info-bg.png" alt="info" />
+        <img class="info__experience-img" src="/assets/woman-with-tablet.png" alt="woman-with-tablet" />
+        <img class="info-bg" src="/assets/info-bg.png" alt="info" />
       </section>
 
       <section class="directions conteiner">
@@ -88,7 +108,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions1.svg"
+              src="/assets/directions1.svg"
               alt="directions1"
             />
 
@@ -101,7 +121,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions2.svg"
+              src="/assets/directions2.svg"
               alt="directions2"
             />
 
@@ -114,7 +134,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions3.svg"
+              src="/assets/directions3.svg"
               alt="directions3"
             />
 
@@ -127,7 +147,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions4.svg"
+              src="/assets/directions4.svg"
               alt="directions4"
             />
 
@@ -140,7 +160,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions5.svg"
+              src="/assets/directions5.svg"
               alt="directions5"
             />
 
@@ -150,7 +170,7 @@
           <div class="directions__inner-item">
             <img
               class="directions__inner-img"
-              src="assets/directions6.svg"
+              src="/assets/directions6.svg"
               alt="directions6"
             />
 
@@ -160,7 +180,7 @@
             </h3>
           </div>
 
-          <img class="directions__bg" src="assets/directions-bg.png" alt="" />
+          <img class="directions__bg" src="/assets/directions-bg.png" alt="" />
         </div>
       </section>
 
@@ -188,11 +208,11 @@
         <div class="lessons__inner">
           <div class="lessons__header">
             <div class="lessons__items">
-              <button class="lessons__btn lessons__btn-online" active>
+              <button class="lessons__btn" data-lesson-trigger="online">
                 Онлайн
               </button>
 
-              <button class="lessons__btn lessons__btn-offline">Оффлайн</button>
+              <button class="lessons__btn" data-lesson-trigger="offline">Оффлайн</button>
             </div>
 
             <p class="lessons__header-text">
@@ -202,7 +222,7 @@
 
           <div class="lessons__content">
             <div class="lessons__content-slider">
-              <div class="lessons__slide active">
+              <div class="lessons__slide" data-lesson-list="online">
                 <div class="lessons__slide-inner">
                   <div class="lessons__content-item">
                     <h3 class="lessons__item-title">Вводный урок</h3>
@@ -223,10 +243,10 @@
                   </div>
                 </div>
 
-                <img class="lessons__sale" src="assets/sale.svg" alt="sale" />
+                <img class="lessons__sale" src="/assets/sale.svg" alt="sale" />
               </div>
 
-              <div class="lessons__slide">
+              <div class="lessons__slide" data-lesson-list="offline">
                 <div class="lessons__slide-inner">
                   <div class="lessons__content-item">
                     <h3 class="lessons__item-title">Вводный урок</h3>
@@ -252,7 +272,10 @@
         </div>
       </section>
 
-      <section class="review conteiner">
+      <setion class="review__wrapper">
+        <div class="review__background"></div>
+      <section class="review conteiner" id="reviews">
+
         <h2 class="review__title">Отзывы</h2>
 
         <div class="splide" role="group" aria-label="Custom Arrows Example">
@@ -267,7 +290,7 @@
                 <div class="splide__item">
                   <img
                     class="splide__item-foto"
-                    src="assets/foto1.png"
+                    src="/assets/foto1.png"
                     alt="foto1"
                   />
 
@@ -288,7 +311,7 @@
                 <div class="splide__item">
                   <img
                     class="splide__item-foto"
-                    src="assets/foto2.png"
+                    src="/assets/foto2.png"
                     alt="foto1"
                   />
 
@@ -307,7 +330,7 @@
                 <div class="splide__item">
                   <img
                     class="splide__item-foto"
-                    src="assets/foto3.png"
+                    src="/assets/foto3.png"
                     alt="foto1"
                   />
 
@@ -325,47 +348,9 @@
               </li>
             </ul>
           </div>
-
-          <ul
-            class="splide__pagination splide__pagination--ltr"
-            role="tablist"
-            aria-label="Select a slide to show"
-          >
-            <li role="presentation">
-              <button
-                class="splide__pagination__page is-active"
-                type="button"
-                role="tab"
-                aria-controls="splide01-slide01"
-                aria-label="Go to slide 1"
-                aria-selected="true"
-              ></button>
-            </li>
-
-            <li role="presentation">
-              <button
-                class="splide__pagination__page"
-                type="button"
-                role="tab"
-                aria-controls="splide01-slide02"
-                aria-label="Go to slide 2"
-                tabindex="-1"
-              ></button>
-            </li>
-
-            <li role="presentation">
-              <button
-                class="splide__pagination__page"
-                type="button"
-                role="tab"
-                aria-controls="splide01-slide02"
-                aria-label="Go to slide 2"
-                tabindex="-1"
-              ></button>
-            </li>
-          </ul>
         </div>
       </section>
+        </setion>
 
       <footer class="footer">
         <div class="footer__wrapper conteiner">
@@ -375,8 +360,8 @@
             >
 
             <div class="footer__social">
-              <a href=""><img src="assets/whatsapp.svg" alt="whatsapp" /></a>
-              <a href=""><img src="assets/telegram.svg" alt="telegram" /></a>
+              <a href=""><img src="/assets/whatsapp.svg" alt="whatsapp" /></a>
+              <a href=""><img src="/assets/telegram.svg" alt="telegram" /></a>
             </div>
           </div>
 
