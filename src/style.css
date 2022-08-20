@@ -43,3 +43,11 @@ body {
 .splide__pagination__page.is-active {
     background-color: #D14582;
 }
+
+button a {
+  color: #f8f3e6;
+}
+
+button:hover{
+  background-color: #F57AB0;
+}
