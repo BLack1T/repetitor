@@ -251,7 +251,7 @@
       align-items: center;
   }
   .info__main-text {
-      top: 0px;
+      top: -8px;
       font-size: 12px;
       line-height: 160%;
   }
