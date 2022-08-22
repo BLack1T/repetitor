@@ -101,3 +101,16 @@ button:active {
 .telegram:hover {
   background-image: url("/assets/telegram1.svg");
 }
+
+.ellipse__wrapper{
+  position: relative;
+}
+.ellipse__bg{
+  position: absolute;
+  inset: 0;
+  top: 1087px;;
+  background-image: url("/assets/bg/ellipse.svg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

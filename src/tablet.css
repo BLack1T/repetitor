@@ -59,6 +59,7 @@
         width: 40px;
         height: 40px;
     }
+
 }
 
 /*header*/
@@ -220,6 +221,12 @@
 
 /*directions*/
 @media screen and (max-width: 1220px) {
+    .ellipse__bg{
+        top: 0;
+        background-image: url("/assets/bg/ellipse2.svg");
+        top: 360px;
+        height: 1550.67px;
+      }
     .directions {
         margin-bottom: 93px;
     }

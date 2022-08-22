@@ -58,3 +58,6 @@ h5 {
 .footer__link-item:not(:last-child){
   margin-bottom: 50px;
 }
+.footer__link-hover:hover{
+  color: #D14582;
+}
