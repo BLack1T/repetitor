@@ -50,13 +50,19 @@ body {
 .splide__pagination__page.is-active {
   background-color: #d14582;
 }
-
+.splide__pagination__page:hover {
+  border: 2px solid #e34761;
+}
 button a {
   color: #f8f3e6;
 }
 
 button:hover {
   background-color: #f57ab0;
+}
+button:active {
+  background-color: #94B687;
+
 }
 
 .menu__close-btn {

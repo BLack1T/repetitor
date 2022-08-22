@@ -96,11 +96,6 @@
         line-height: 32px;
     }
 
-    .header__menu-btn {
-        width: 39px;
-        height: 39px;
-        object-fit: contain;
-    }
 
     .header__menu-tablet {
         display: flex;
@@ -160,7 +155,7 @@
     }
 
     .info__title {
-        margin-bottom: 21px;
+        margin-bottom: 51px;
         text-align: center;
     }
 
@@ -182,6 +177,10 @@
         height: 15.55px;
         left: -40px;
     }
+    .info__main-text:not(:last-child) {
+        margin-bottom: 28px;
+      }
+      
 
     .info-img {
         display: flex;
@@ -192,6 +191,7 @@
         content: url('/assets/info-bg-tablet.png');
         width: 190%;
         top: -20px;
+        left: -290px;
         z-index: -1;
     }
 
@@ -240,10 +240,9 @@
 
     .directions__bg {
         position: absolute;
-        width: 228px;
-        height: 400px;
-        top: 132px;
-        right: 0;
+        width: 315px;
+        top: 143px;
+        right: -175px;
     }
 
     .directions__inner {
@@ -418,6 +417,10 @@
 
 /*footer*/
 @media screen and (max-width: 1220px) {
+    h5 {
+        text-align: center;
+    }
+
     .footer__wrapper {
         padding-top: 29px;
         padding-bottom: 28px;
